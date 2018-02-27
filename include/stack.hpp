@@ -92,7 +92,7 @@ data_to_reclaim_t::~data_to_reclaim_t()
 	deleter( data );
 }
 
-std::atomic<data_to_reclaim_t *> nodes_to_reclaim = nullptr;
+std::atomic<data_to_reclaim_t *> nodes_to_reclaim{ nullptr };
 
 void add_to_reclaim_list( data_to_reclaim_t * node )
 {

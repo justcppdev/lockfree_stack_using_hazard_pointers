@@ -4,6 +4,6 @@
 
 TEST_CASE("empty method for empty stack", "")
 {
-    stack<int> s;
+    jcd::stack_t<int> s;
     REQUIRE( s.empty() );
 }
