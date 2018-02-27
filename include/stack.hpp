@@ -138,10 +138,17 @@ namespace jcd {
 
         std::atomic<node_t *> m_head;
     public:
+        stack_t();
         void push( T const & data );
         auto pop() -> std::shared_ptr<T>;
         bool empty() const;
     };
+    
+    template< typename T >
+    stack_t<T>::stack_t() :
+        m_head{ nullptr }
+    {
+    }
 
     template< typename T >
     void stack_t<T>::push( T const & data )
