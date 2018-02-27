@@ -1,4 +1,5 @@
 #include <atomic>
+#include <functional>
 #include <memory>
 #include <thread>
 
